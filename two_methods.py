@@ -1,13 +1,13 @@
 class TwoMethods:
 	def getString(self):
-		st = input('Write something: ')
-		return st
-	def printString(self, getString):
-		return print(getString.upper())
+		self.st = input('Write something: ')
+
+	def printString(self):
+		print(self.st.upper())
 		
 def trial(test):
-	test.printString(test.getString())
-	return print('Bravo!')
+	test.getString()
+	test.printString()
 	
 experiment = TwoMethods()
 
